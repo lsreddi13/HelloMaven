@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.listBox.DemoList">
+      <class name="com.selenium.wait.DemoFluentWait">
         <methods>
-          <include name="test"/>
+          <include name="testFluentWait"/>
         </methods>
-      </class> <!-- com.selenium.listBox.DemoList -->
+      </class> <!-- com.selenium.wait.DemoFluentWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
