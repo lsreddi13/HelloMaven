@@ -1,60 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="6" total="13" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T02:33:01Z" name="Default suite" finished-at="2024-03-13T02:33:30Z" duration-ms="28696">
+  <suite started-at="2024-03-14T03:02:55Z" name="Suite" finished-at="2024-03-14T03:03:23Z" duration-ms="28154">
     <groups>
     </groups>
-    <test started-at="2024-03-13T02:33:01Z" name="Default test" finished-at="2024-03-13T02:33:30Z" duration-ms="28696">
+    <test started-at="2024-03-14T03:02:55Z" name="Test" finished-at="2024-03-14T03:03:23Z" duration-ms="28154">
+      <class name="com.selenium.wait.DemoimplicitWaits">
+        <test-method signature="testWait()[pri:0, instance:com.selenium.wait.DemoimplicitWaits@95e33cc]" started-at="2024-03-14T08:33:08Z" name="testWait" finished-at="2024-03-14T08:33:10Z" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWait -->
+      </class> <!-- com.selenium.wait.DemoimplicitWaits -->
+      <class name="com.selenium.alerts.DemoAlerts">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:32:55Z" name="setUp" finished-at="2024-03-14T08:33:08Z" duration-ms="13028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPromptAlertsAccept()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:08Z" name="testPromptAlertsAccept" finished-at="2024-03-14T08:33:08Z" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptAlertsAccept -->
+        <test-method signature="testSimpleAlerts()[pri:1, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:22Z" name="testSimpleAlerts" finished-at="2024-03-14T08:33:23Z" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSimpleAlerts -->
+        <test-method signature="testConfirmationAlertsAccept()[pri:2, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="testConfirmationAlertsAccept" finished-at="2024-03-14T08:33:23Z" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmationAlertsAccept -->
+        <test-method signature="testConfirmationAlertsDismiss()[pri:3, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="testConfirmationAlertsDismiss" finished-at="2024-03-14T08:33:23Z" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmationAlertsDismiss -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="closeBrowser" finished-at="2024-03-14T08:33:23Z" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.alerts.DemoAlerts -->
       <class name="com.selenium.wait.DemoFluentWait">
-        <test-method signature="testFluentWait()[pri:0, instance:com.selenium.wait.DemoFluentWait@1bd39d3c]" started-at="2024-03-13T08:03:01Z" name="testFluentWait" finished-at="2024-03-13T08:03:30Z" duration-ms="28670" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 300 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 3 second(s) with 300 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.selenium.wait.DemoFluentWait.testFluentWait(DemoFluentWait.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testFluentWait()[pri:0, instance:com.selenium.wait.DemoFluentWait@1e44b638]" started-at="2024-03-14T08:33:16Z" name="testFluentWait" finished-at="2024-03-14T08:33:22Z" duration-ms="6472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFluentWait -->
       </class> <!-- com.selenium.wait.DemoFluentWait -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.selenium.wait.DemoAlertExplicitWait">
+        <test-method signature="testAlertsWithExplicitWait()[pri:0, instance:com.selenium.wait.DemoAlertExplicitWait@38604b81]" started-at="2024-03-14T08:33:10Z" name="testAlertsWithExplicitWait" finished-at="2024-03-14T08:33:16Z" duration-ms="6275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAlertsWithExplicitWait -->
+      </class> <!-- com.selenium.wait.DemoAlertExplicitWait -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

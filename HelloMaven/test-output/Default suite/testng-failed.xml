@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.wait.DemoFluentWait">
+      <class name="com.selenium.alerts.DemoAlerts">
         <methods>
-          <include name="testFluentWait"/>
+          <include name="setUp"/>
+          <include name="testPromptAlertsAccept"/>
         </methods>
-      </class> <!-- com.selenium.wait.DemoFluentWait -->
+      </class> <!-- com.selenium.alerts.DemoAlerts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

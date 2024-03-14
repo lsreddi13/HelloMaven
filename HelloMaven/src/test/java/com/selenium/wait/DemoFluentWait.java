@@ -13,11 +13,13 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class DemoFluentWait {
+import com.selenium.utils.Utils;
+
+public class DemoFluentWait extends Utils{
 
 	@Test
 	public void testFluentWait() {
-		WebDriver driver = new ChromeDriver();
+//		WebDriver driver = new ChromeDriver();
 //		driver.get("https://continentalhospitals.com/request-appointment/");
 		driver.get("https://demoqa.com/alerts");
 		driver.findElement(By.id("timerAlertButton")).click();
