@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.wait.DemoimplicitWaits">
+      <class name="com.selenium.webtable.DemoWebTable">
         <methods>
-          <include name="setUp"/>
-          <include name="closeBrowser"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.selenium.wait.DemoimplicitWaits -->
-      <class name="com.selenium.alerts.DemoAlerts">
-        <methods>
-          <include name="testConfirmationAlertsDismiss"/>
-          <include name="testSimpleAlerts"/>
-          <include name="setUp"/>
-          <include name="testConfirmationAlertsAccept"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.selenium.alerts.DemoAlerts -->
-      <class name="com.selenium.wait.DemoAlertExplicitWait">
-        <methods>
-          <include name="setUp"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.selenium.wait.DemoAlertExplicitWait -->
-      <class name="com.selenium.wait.DemoFluentWait">
-        <methods>
-          <include name="setUp"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.selenium.wait.DemoFluentWait -->
+      </class> <!-- com.selenium.webtable.DemoWebTable -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

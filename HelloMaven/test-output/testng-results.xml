@@ -1,55 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="13" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T03:02:55Z" name="Suite" finished-at="2024-03-14T03:03:23Z" duration-ms="28154">
+  <suite started-at="2024-03-19T02:35:46Z" name="Default suite" finished-at="2024-03-19T02:35:57Z" duration-ms="10754">
     <groups>
     </groups>
-    <test started-at="2024-03-14T03:02:55Z" name="Test" finished-at="2024-03-14T03:03:23Z" duration-ms="28154">
-      <class name="com.selenium.wait.DemoimplicitWaits">
-        <test-method signature="testWait()[pri:0, instance:com.selenium.wait.DemoimplicitWaits@95e33cc]" started-at="2024-03-14T08:33:08Z" name="testWait" finished-at="2024-03-14T08:33:10Z" duration-ms="1513" status="PASS">
+    <test started-at="2024-03-19T02:35:46Z" name="Default test" finished-at="2024-03-19T02:35:57Z" duration-ms="10754">
+      <class name="com.selenium.webtable.DemoWebTable">
+        <test-method signature="test()[pri:0, instance:com.selenium.webtable.DemoWebTable@301eda63]" started-at="2024-03-19T08:05:46Z" name="test" finished-at="2024-03-19T08:05:57Z" duration-ms="10737" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWait -->
-      </class> <!-- com.selenium.wait.DemoimplicitWaits -->
-      <class name="com.selenium.alerts.DemoAlerts">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:32:55Z" name="setUp" finished-at="2024-03-14T08:33:08Z" duration-ms="13028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testPromptAlertsAccept()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:08Z" name="testPromptAlertsAccept" finished-at="2024-03-14T08:33:08Z" duration-ms="231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPromptAlertsAccept -->
-        <test-method signature="testSimpleAlerts()[pri:1, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:22Z" name="testSimpleAlerts" finished-at="2024-03-14T08:33:23Z" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimpleAlerts -->
-        <test-method signature="testConfirmationAlertsAccept()[pri:2, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="testConfirmationAlertsAccept" finished-at="2024-03-14T08:33:23Z" duration-ms="163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testConfirmationAlertsAccept -->
-        <test-method signature="testConfirmationAlertsDismiss()[pri:3, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="testConfirmationAlertsDismiss" finished-at="2024-03-14T08:33:23Z" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testConfirmationAlertsDismiss -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.selenium.alerts.DemoAlerts@44d52de2]" started-at="2024-03-14T08:33:23Z" name="closeBrowser" finished-at="2024-03-14T08:33:23Z" duration-ms="160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.selenium.alerts.DemoAlerts -->
-      <class name="com.selenium.wait.DemoFluentWait">
-        <test-method signature="testFluentWait()[pri:0, instance:com.selenium.wait.DemoFluentWait@1e44b638]" started-at="2024-03-14T08:33:16Z" name="testFluentWait" finished-at="2024-03-14T08:33:22Z" duration-ms="6472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFluentWait -->
-      </class> <!-- com.selenium.wait.DemoFluentWait -->
-      <class name="com.selenium.wait.DemoAlertExplicitWait">
-        <test-method signature="testAlertsWithExplicitWait()[pri:0, instance:com.selenium.wait.DemoAlertExplicitWait@38604b81]" started-at="2024-03-14T08:33:10Z" name="testAlertsWithExplicitWait" finished-at="2024-03-14T08:33:16Z" duration-ms="6275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAlertsWithExplicitWait -->
-      </class> <!-- com.selenium.wait.DemoAlertExplicitWait -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- com.selenium.webtable.DemoWebTable -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

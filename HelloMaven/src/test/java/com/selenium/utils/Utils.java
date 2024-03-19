@@ -22,11 +22,11 @@ public class Utils {
 
 	}
 
-	@AfterTest
-	public void closeBrowser() {
-		driver.close();
-
-	}
+//	@AfterTest
+//	public void closeBrowser() {
+//		driver.close();
+//
+//	}
 	
 	public void acceptAlert(WebDriver driver) {
 		Alert al = driver.switchTo().alert();

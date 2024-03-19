@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.alerts.DemoAlerts">
+      <class name="com.selenium.webtable.DemoWebTable">
         <methods>
-          <include name="setUp"/>
-          <include name="testPromptAlertsAccept"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.selenium.alerts.DemoAlerts -->
+      </class> <!-- com.selenium.webtable.DemoWebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
