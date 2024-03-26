@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 import com.hellomaven.base.Base;
 
@@ -13,16 +14,29 @@ public class loginpage extends Base {
 
 	// write the webelements
 
-	public loginpage() throws IOException {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	WebElement email_ele = driver.findElement(By.id("Email"));
+//	WebElement email_ele = driver.findElement(By.id("Email"));
 //	WebElement pwd_ele = driver.findElement(By.id("Password"));
+
+	@FindBy(how = How.ID, using = "Email")
+	WebElement email_ele;
 
 	@FindBy(how = How.ID, using = "Password")
 	WebElement pwd_ele;
+
+	@FindBy(how = How.XPATH, using = "//button[text()='Log in']")
+	WebElement loginBtn_ele;
+
+	@FindBy(how = How.XPATH, using = "//div[@class='message-error validation-summary-errors']")
+	WebElement errorMsg_ele;
+
+	public loginpage() throws IOException {
+		super();
+		PageFactory.initElements(driver, this);
+	}
+
+	public String getErrorMesage() {
+		return errorMsg_ele.getText();
+	}
 
 	public void enterEmail(String emailID) {
 
@@ -37,6 +51,8 @@ public class loginpage extends Base {
 		pwd_ele.sendKeys(pass);
 	}
 
-	// methods
+	public void clickLogin() {
+		loginBtn_ele.click();
+	}
 
 }

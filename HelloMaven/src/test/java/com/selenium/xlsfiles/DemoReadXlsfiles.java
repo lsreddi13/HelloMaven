@@ -70,6 +70,7 @@ public class DemoReadXlsfiles extends Base {
 		for (int i = 0; i < numberOfRows; i++) {
 			for (int j = 0; j < numberOfCol; j++) {
 				obj[i][j] = sh.getRow(i + 1).getCell(j).toString();
+				System.out.println(obj[i][j]);
 			}
 		}
 		return obj;
