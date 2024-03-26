@@ -21,13 +21,28 @@ public class DemoTest extends Base {
 
 	@BeforeClass
 	public void setUp() throws IOException {
-
 		init();
-
 		driver.get(prop.getProperty("nopURL"));
 	}
+	
+	@Test(enabled = true)
+	public void verifyErrorMsgInLoginPage() throws IOException, InterruptedException {
+		launchPage lp = new launchPage();
+		loginpage lpp = new loginpage();
+		
 
-	@Test(dataProvider = "getLoginData")
+		lp.clickLogin();
+		lpp.enterEmail("fadfs@gmail.com");
+		lpp.enterPassword("dfasdfasd");
+		lpp.clickLogin();
+		Thread.sleep(5000);
+		String error = lpp.getErrorMesage();		
+		String exp_error = "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found";
+		Assert.assertEquals(error, exp_error);
+
+	}
+
+	@Test(dataProvider = "getLoginData", enabled = false)
 	public void testLoginMultipleUsers(String email, String pass) throws IOException, InterruptedException {
 		launchPage lp = new launchPage();
 		loginpage lpp = new loginpage();

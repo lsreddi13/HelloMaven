@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Test2(failed)">
     <classes>
-      <class name="com.selenium.wait.DemoimplicitWaits">
+      <class name="com.hellomaven.tests.ParallelTestDemo2">
         <methods>
           <include name="setUp"/>
-          <include name="closeBrowser"/>
+          <include name="verifyErrorMsgInLoginPage" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.selenium.wait.DemoimplicitWaits -->
-      <class name="com.selenium.alerts.DemoAlerts">
-        <methods>
-          <include name="testConfirmationAlertsDismiss"/>
-          <include name="testSimpleAlerts"/>
-          <include name="setUp"/>
-          <include name="testConfirmationAlertsAccept"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.selenium.alerts.DemoAlerts -->
-      <class name="com.selenium.wait.DemoAlertExplicitWait">
+      </class> <!-- com.hellomaven.tests.ParallelTestDemo2 -->
+      <class name="com.hellomaven.tests.ParallelTestDemo">
         <methods>
           <include name="setUp"/>
-          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.selenium.wait.DemoAlertExplicitWait -->
-      <class name="com.selenium.wait.DemoFluentWait">
-        <methods>
-          <include name="setUp"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.selenium.wait.DemoFluentWait -->
+      </class> <!-- com.hellomaven.tests.ParallelTestDemo -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

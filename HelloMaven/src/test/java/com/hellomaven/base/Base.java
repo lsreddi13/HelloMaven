@@ -21,6 +21,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
 
@@ -36,8 +39,20 @@ public class Base {
 	}
 
 	public static void init() {
+		String Browser = "Chrome";
+		if (Browser.equalsIgnoreCase("Chrome")) {
 
-		driver = new ChromeDriver();
+			driver = new ChromeDriver();
+		} else if (Browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+
+		} else if (Browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+
+		} else {
+			driver = new ChromeDriver();
+		}
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 	}
@@ -63,8 +78,6 @@ public class Base {
 		s.selectByValue(value);
 
 	}
-	
-	
 
 	@DataProvider
 	public Object[][] getLoginData() throws IOException {
@@ -74,7 +87,6 @@ public class Base {
 		obj1 = getData(filepath, sheet);
 		return obj1;
 	}
-	
 
 	@DataProvider
 	public Object[][] getregData() throws IOException {
@@ -84,7 +96,6 @@ public class Base {
 		obj1 = getData(filepath, sheet);
 		return obj1;
 	}
-
 
 	public Object[][] getData(String filepath, String sheet) throws IOException {
 

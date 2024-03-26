@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T11:23:39Z" name="Default suite" finished-at="2024-03-25T11:23:51Z" duration-ms="12028">
+  <suite started-at="2024-03-26T02:47:44Z" name="Default suite" finished-at="2024-03-26T02:47:44Z" duration-ms="25">
     <groups>
     </groups>
-    <test started-at="2024-03-25T11:23:39Z" name="Default test" finished-at="2024-03-25T11:23:51Z" duration-ms="12028">
-      <class name="com.hellomaven.tests.DemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hellomaven.tests.DemoTest@71e9ebae]" started-at="2024-03-25T16:53:39Z" name="setUp" finished-at="2024-03-25T16:53:44Z" duration-ms="4475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgInLoginPage()[pri:0, instance:com.hellomaven.tests.DemoTest@71e9ebae]" started-at="2024-03-25T16:53:44Z" name="verifyErrorMsgInLoginPage" finished-at="2024-03-25T16:53:51Z" duration-ms="7519" status="FAIL">
+    <test started-at="2024-03-26T02:47:44Z" name="Default test" finished-at="2024-03-26T02:47:44Z" duration-ms="25">
+      <class name="com.hellomaven.tests.DemoDependsOn">
+        <test-method signature="login()[pri:1, instance:com.hellomaven.tests.DemoDependsOn@14bee915]" started-at="2024-03-26T08:17:44Z" name="login" finished-at="2024-03-26T08:17:44Z" duration-ms="9" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Login was unsuccessful. Please correct the errors and try again.
- No customer account found] but found [Login was unsuccessful. Please correct the errors and try again.
-No customer account found]]]>
+              <![CDATA[expected [Welcome! Sasidhar] but found [please try enter valid data]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login was unsuccessful. Please correct the errors and try again.
- No customer account found] but found [Login was unsuccessful. Please correct the errors and try again.
-No customer account found]
+              <![CDATA[java.lang.AssertionError: expected [Welcome! Sasidhar] but found [please try enter valid data]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.hellomaven.tests.DemoTest.verifyErrorMsgInLoginPage(DemoTest.java:43)
+	at com.hellomaven.tests.DemoDependsOn.login(DemoDependsOn.java:11)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,8 +51,70 @@ No customer account found]
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorMsgInLoginPage -->
-      </class> <!-- com.hellomaven.tests.DemoTest -->
+        </test-method> <!-- login -->
+        <test-method signature="orderItem()[pri:2, instance:com.hellomaven.tests.DemoDependsOn@14bee915]" started-at="2024-03-26T08:17:44Z" name="orderItem" finished-at="2024-03-26T08:17:44Z" depends-on-methods="com.hellomaven.tests.DemoDependsOn.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DemoDependsOn.orderItem()[pri:2, instance:com.hellomaven.tests.DemoDependsOn@14bee915] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DemoDependsOn.orderItem()[pri:2, instance:com.hellomaven.tests.DemoDependsOn@14bee915] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItem -->
+        <test-method signature="logout()[pri:3, instance:com.hellomaven.tests.DemoDependsOn@14bee915]" started-at="2024-03-26T08:17:44Z" name="logout" finished-at="2024-03-26T08:17:44Z" depends-on-methods="com.hellomaven.tests.DemoDependsOn.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DemoDependsOn.logout()[pri:3, instance:com.hellomaven.tests.DemoDependsOn@14bee915] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DemoDependsOn.logout()[pri:3, instance:com.hellomaven.tests.DemoDependsOn@14bee915] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.hellomaven.tests.DemoDependsOn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
